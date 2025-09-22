@@ -16,6 +16,7 @@ A practical demonstration of a CI/CD workflow created for Task 1 of the Elevate 
 *Choose an Ubuntu Server 24.04 LTS image, t2.micro, and storage of 10gb.  
 *Configure the security group to allow inbound traffic on port 22 (SSH), port 3000 (for your Node.js app), port 80 (HTTP) and port 443 (HTTPS) from anywhere (0.0.0.0/0).  
 *Launch the instance and connect using SSH.  
+*MAKE SURE TO GIVE EXECUTIVE PERMISSION FOR THE "pem file"
 
 ---
 
