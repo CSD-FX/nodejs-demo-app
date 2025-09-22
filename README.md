@@ -1,14 +1,13 @@
 # nodes-demo-app
 A practical demonstration of a CI/CD workflow created for Task 1 of the Elevate Labs DevOps Internship. This project uses GitHub Actions to automate the build, containerization (with Docker), and publishing of a Node.js application to DockerHub. The pipeline is designed to be triggered on every push to the main branch.
 
-**Project Files
-  *server.js: The main Node.js server file using the Express framework.
-  *package.json: Defines project metadata and dependencies.
-  *Dockerfile: Instructions to build the Docker image for the application.
-  *.github/workflows/main.yml: The GitHub Actions workflow file for the CI/CD pipeline.
-  *views/index.ejs: The home page template.
-  *views/contact.ejs: The contact page template.
-
+**Project Files**  
+*server.js: The main Node.js server file using the Express framework.  
+*package.json: Defines project metadata and dependencies.  
+*Dockerfile: Instructions to build the Docker image for the application.  
+*.github/workflows/main.yml: The GitHub Actions workflow file for the CI/CD pipeline.  
+*views/index.ejs: The home page template.  
+*views/contact.ejs: The contact page template.  
 
 ---
 
