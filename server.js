@@ -32,9 +32,9 @@ const pageData = {
     ]
   },
   contact: {
-    title: "Contact Us",
-    header: "Get in Touch",
-    formIntro: "We would love to hear from you! Please fill out the form below.",
+    title: "Contribution",
+    header: "Thankyou for the oppurtunity to participate in the Internship",
+    formIntro: "CHANDRASHEKAR D",
     email: "devops16008121@gmail.com",
     phone: "+91 7975958224",
     address: "Bangalore, Karnataka"
