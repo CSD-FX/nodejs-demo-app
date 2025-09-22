@@ -31,23 +31,24 @@ echo "Hello ELEVATE-LABS USER 😊!! You've successfully installed Docker and Gi
 
 ---
 
-## STEP 3: Create a new repository on your GITHUB account----
-*connect your remote repo to your local repo by running below command
-```bash
-   git remote add origin <your new repository https url>
-```
-   
-   
----
-
-## STEP 4: Clone the repository in EC2 instance  
+## STEP 3: Clone the repository in EC2 instance  
 ```bash
 git clone https://github.com/CSD-FX/nodejs-demo-app.git
-git init
+cd nodejs-demo-app
 ```
+---
 
 ---
 
+## STEP 4: Create a new repository on your GITHUB account----
+*connect your remote repo to your local repo by running below command
+```bash
+   git remote remove origin
+   git remote add origin <your new repository https url>
+```
+
+---
+   
 ## STEP 5: Configure Docker Hub and EC2 instance using GitHub Secrets  
 - Go to your repository on GitHub.  
 - Click on Settings → Secrets and Variables → Actions.  
@@ -58,10 +59,12 @@ git init
 - `DOCKERHUB_TOKEN` → Docker Hub access token or password  
 - `SERVER_IP` → Public IP of your EC2 instance  
 - `SERVER_USER` → EC2 SSH username (`ubuntu`)  
-- `SERVER_SSH_KEY` → Private SSH key to access EC2  
+- `SERVER_SSH_KEY` → Private SSH key to access EC2
+
+  use the above key_values as it is--
 
 ---
-use the above key_values as it is--
+
 
 ## STEP 6: Trigger the Pipeline by pushing
 ```bash
