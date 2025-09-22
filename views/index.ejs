@@ -1,6 +1,36 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title><%= title %></title>
+<style>
+  body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f4; color:#333; }
+  .container { width: 80%; margin:auto; padding:20px; }
+  header { background:#fff; color:#004d40; padding:20px; border-bottom:3px solid #004d40; text-align:center; }
+  nav { background:#004d40; text-align:center; padding:10px 0; }
+  nav a { color:#fff; text-decoration:none; margin:0 15px; font-size:1.2em; }
+  .main-content { background:#fff; padding:20px; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.1); margin-top:20px; }
+  h2 { color:#004d40; }
+</style>
+</head>
+<body>
+<header>
+  <h1><%= header %></h1>
+</header>
+<nav>
+  <a href="/">Home</a>
+  <a href="/contact">Contact</a>
+</nav>
+<div class="container">
+  <div class="main-content">
+    <p><%= intro %></p>
+    <% sections.forEach(function(sec){ %>
+      <h2><%= sec.heading %></h2>
+      <p><%= sec.content %></p>
+    <% }) %>
+  </div>
+</div>
+</body>
+</html>
+

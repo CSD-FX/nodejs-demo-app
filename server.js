@@ -3,14 +3,14 @@ const app = express();
 const port = 3000;
 const path = require('path');
 
-// Set up a simple templating engine for demonstration
+// Set up EJS templating
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-// Middleware to serve static files (like CSS)
-app.use(express.static('public'));
+// Serve static files (CSS, JS, images)
+app.use(express.static(path.join(__dirname, 'public')));
 
-// Data for the pages
+// Data for pages
 const pageData = {
   home: {
     title: "Elevate Labs: Where Ideas Take Flight",
@@ -35,21 +35,23 @@ const pageData = {
     title: "Contact Us",
     header: "Get in Touch",
     formIntro: "We would love to hear from you! Please fill out the form below.",
+    email: "devops16008121@gmail.com",
+    phone: "+91 7975958224",
+    address: "Bangalore, Karnataka"
   }
 };
 
-// Route for the home page
+// Routes
 app.get('/', (req, res) => {
   res.render('index', pageData.home);
 });
 
-// Route for the contact page
 app.get('/contact', (req, res) => {
   res.render('contact', pageData.contact);
 });
 
-// Start the server
-app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
-  console.log('Use `node server.js` to run this application.');
-}); 
+// Start server on all interfaces
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Server running at http://0.0.0.0:${port}`);
+});
+
