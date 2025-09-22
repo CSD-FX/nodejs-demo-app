@@ -41,7 +41,7 @@ cd nodejs-demo-app
 
 ---
 
-## STEP 4: Create a new repository on your GITHUB account----
+## STEP 4: Create a new repository on your GITHUB account (UNTICK Readme file or conflict can occur)----
 *connect your remote repo to your local repo by running below command
 ```bash
    git remote remove origin
