@@ -10,10 +10,10 @@ A practical demonstration of a CI/CD workflow created for Task 1 of the Elevate 
   *views/contact.ejs: The contact page template.
 
 **STEP 1: Launch an EC2 Instance**
-  * Log in to your AWS Management Console and navigate to the EC2 Dashboard and click Launch instance.
-  * Choose an Ubuntu Server 24.04 LTS image, t2.micro, and storage of 10gb.
-  * Configure the security group to allow inbound traffic on port 22 (SSH) and also port 3000 (for your Node.js app) from anywhere (0.0.0.0/0).
-  * Launch the instance and connect using SSH.
+  *Log in to your AWS Management Console and navigate to the EC2 Dashboard and click Launch instance.
+  *Choose an Ubuntu Server 24.04 LTS image, t2.micro, and storage of 10gb.
+  *Configure the security group to allow inbound traffic on port 22 (SSH) and also port 3000 (for your Node.js app) from anywhere (0.0.0.0/0).
+  *Launch the instance and connect using SSH.
 
 STEP 2: install Docker and Git by running below commands----
 ```bash
@@ -25,18 +25,18 @@ newgrp docker
 echo "Hello ELEVATE-LABS USER 😊!! You've successfully installed Docker and Git in your terminal😇✌🏼"
 ```
 
-**STEP 3: Create a new repository on your GITHUB account
-  *Configure and connect your remote repository to your local repository
+**STEP 3: Create a new repository on your GITHUB account**
+  -Configure and connect your remote repository to your local repository
 
 STEP 4: Clone the repository in EC2 instance
    ```bash
       git clone https://github.com/CSD-FX/nodejs-demo-app.git
    ```
 
-**STEP 5: Configure Docker Hub and EC2 instance using github secrects
-  *Go to your repository on GitHub.
-  *Click on Settings → Secrets and Variables → Actions.
-  *Click New repository secretand add each secret one by one:
+**STEP 5: Configure Docker Hub and EC2 instance using github secrects**
+  -Go to your repository on GitHub.
+  -Click on Settings → Secrets and Variables → Actions.
+  -Click New repository secretand add each secret one by one:
    - Secrets:  
      - `DOCKERHUB_USERNAME` → Your Docker Hub username  
      - `DOCKERHUB_TOKEN` → Docker Hub access token or password
@@ -54,16 +54,16 @@ STEP 4: Clone the repository in EC2 instance
   *Provide Github login and personal token if asked so
   *# IfError in push----- Use: `git pull origin main --rebase`
 
-**STEP 7: Verify the Workflow 🧚‍♀️
-  *On GitHub, go to your repository and click on the Actions tab.
-  *You will see the CI/CD pipeline running. Click on the workflow run to view the progress of the build_push_pull_and_run jobs. 
+**STEP 7: Verify the Workflow 🧚‍♀️**
+  -On GitHub, go to your repository and click on the Actions tab.
+  -You will see the CI/CD pipeline running. Click on the workflow run to view the progress of the build_push_pull_and_run jobs. 
 
-**STEP 8: Access your web app 😇✌🏼
-  * <public IP of EC2>:3000 (running in port 3000)
+**STEP 8: Access your web app 😇✌🏼**
+  - <public IP of EC2>:3000 (running in port 3000)
 
-**STEP 9: To check the automation of the project
-  *Head to server.js and edit any changes as per your wish
-  *add, commit and push to triger the Beauty of automation 😊
+**STEP 9: To check the automation of the project**
+  -Head to server.js and edit any changes as per your wish
+  -add, commit and push to triger the Beauty of automation 😊
 
 
 HAPPY TO COMPLETE THE WHOLE END_END DEPLOYEMENT ON MY OWN 😊😊
