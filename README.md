@@ -77,7 +77,7 @@ git push -u origin main
 *# If Error in push → Use:*  
 ```bash
 git pull origin main --rebase
-git push -u origin main
+git push -u origin main --force
 ```
 
 ---
