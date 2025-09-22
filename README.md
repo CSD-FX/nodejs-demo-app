@@ -61,6 +61,10 @@ STEP 4: Clone the repository in EC2 instance
 **STEP 8: Access your web app 😇✌🏼
   * <public IP of EC2>:3000 (running in port 3000)
 
+**STEP 9: To check the automation of the project
+  *Head to server.js and edit any changes as per your wish
+  *add, commit and push to triger the Beauty of automation 😊
+
 
 HAPPY TO COMPLETE THE WHOLE END_END DEPLOYEMENT ON MY OWN 😊😊
 
